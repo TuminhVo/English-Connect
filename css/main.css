@@ -139,6 +139,15 @@ main .button {
   margin-bottom: 1em;
 }
 
+main .hero-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  float: left;
+  shape-outside: circle(50%);
+  margin: 1em;
+}
+
 main h2 {
   text-align: center;
   margin-bottom: 1em;
@@ -148,6 +157,8 @@ main h2 {
 
 main p {
   line-height: 1.6em;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 main .author {

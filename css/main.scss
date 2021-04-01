@@ -120,6 +120,15 @@ main {
         margin-bottom: 1em;
     }
 
+    .hero-img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        float: left;
+        shape-outside: circle(50%);
+        margin: 1em;
+    }
+
     h2 {
         text-align: center;
         margin-bottom: 1em;
@@ -129,6 +138,8 @@ main {
 
     p{
         line-height: 1.6em;
+        text-align: justify;
+        text-justify: inter-word;
     }
 
     .author {
