@@ -50,6 +50,27 @@ header .container .logo .main-logo .logo-img {
   height: 60px;
   border: 2px solid green;
   border-radius: 50%;
+  position: relative;
+}
+
+header .container .logo .main-logo .logo-img::after {
+  content: '';
+  width: 30px;
+  height: 60px;
+  border: 2px solid green;
+  border-radius: 50%;
+  position: absolute;
+  left: 13px;
+  top: -2px;
+}
+
+header .container .logo .main-logo .logo-img::before {
+  content: '';
+  width: 60px;
+  height: 2px;
+  background: green;
+  position: absolute;
+  top: 30px;
 }
 
 header .container .logo .main-logo .vertical-line {
@@ -68,7 +89,7 @@ header .container .logo .main-logo .name {
 }
 
 header .container .intro-statement {
-  padding: .5em;
+  padding: 1em;
   border-radius: 5em;
   background-image: -webkit-gradient(linear, left top, right bottom, from(green), to(white));
   background-image: linear-gradient(to bottom right, green, white);
