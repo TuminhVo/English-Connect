@@ -22,7 +22,15 @@ h1, h2, h3, h4, h5, h6 {
   padding: 1em;
 }
 
-header .container .logo {
+section {
+  margin-bottom: 2em;
+}
+
+header {
+  margin-bottom: 2em;
+}
+
+.logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -33,7 +41,7 @@ header .container .logo {
   margin-bottom: 2em;
 }
 
-header .container .logo .main-logo {
+.logo .main-logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -44,7 +52,7 @@ header .container .logo .main-logo {
   margin: 1.5em 1em;
 }
 
-header .container .logo .main-logo .logo-img {
+.logo .main-logo .logo-img {
   display: block;
   width: 60px;
   height: 60px;
@@ -53,7 +61,7 @@ header .container .logo .main-logo .logo-img {
   position: relative;
 }
 
-header .container .logo .main-logo .logo-img::after {
+.logo .main-logo .logo-img::after {
   content: '';
   width: 30px;
   height: 60px;
@@ -64,23 +72,24 @@ header .container .logo .main-logo .logo-img::after {
   top: -2px;
 }
 
-header .container .logo .main-logo .logo-img::before {
+.logo .main-logo .logo-img::before {
   content: '';
   width: 60px;
   height: 2px;
   background: green;
   position: absolute;
   top: 30px;
+  right: 0;
 }
 
-header .container .logo .main-logo .vertical-line {
+.logo .main-logo .vertical-line {
   width: 2px;
-  height: 100%;
+  height: 64px;
   background: skyblue;
   margin: 0 .5em;
 }
 
-header .container .logo .main-logo .name {
+.logo .main-logo .name {
   color: blue;
   font-weight: bold;
   -ms-flex-item-align: center;
@@ -88,7 +97,7 @@ header .container .logo .main-logo .name {
       align-self: center;
 }
 
-header .container .intro-statement {
+.intro-statement {
   padding: 1em;
   border-radius: 5em;
   background-image: -webkit-gradient(linear, left top, right bottom, from(green), to(white));
@@ -99,27 +108,38 @@ header .container .intro-statement {
   margin-bottom: 2em;
 }
 
-header .container .active-hours p {
+.active-hours p {
   margin: 0;
 }
 
-header .container .active-hours strong {
+.active-hours strong {
   color: blue;
 }
 
-header .container .active-hours b, header .container .active-hours strong {
+.active-hours b, .active-hours strong {
   text-transform: uppercase;
 }
 
-header .container .active-hours sup {
+.active-hours sup {
   text-transform: lowercase;
 }
 
-header .address {
+.logo, .intro-statement, .active-hours {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.address {
+  padding: .5em;
   background: #4d4d4d;
   color: #f3f3f3;
   -webkit-box-shadow: 1px 2px gray;
           box-shadow: 1px 2px gray;
+}
+
+.address p {
+  margin: unset;
 }
 
 main {
@@ -165,10 +185,6 @@ main .author {
   float: right;
 }
 
-.essay-section > div {
-  margin-bottom: 5em;
-}
-
 table {
   margin: 2em 0;
 }
@@ -202,5 +218,35 @@ th {
   background: black;
   color: white;
   margin-top: 2em;
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  .logo, .active-hours {
+    width: 50%;
+  }
+  .intro-statement {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  .container {
+    padding: 0 10em;
+  }
+  header .container {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .vocabularies, .questions {
+    width: 50%;
+  }
+  .phrasal-verbs {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=main.css.map */
