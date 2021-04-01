@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body {
+    background: #f2f2f2;
+    margin: 0;
+    font-family: 'Poppins';
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1em;
+}
+header {
+    .container {
+        
+
+        .logo {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 2em;
+            
+            .main-logo {
+                display: flex;
+                flex-direction: row;
+                margin: 1.5em 1em;
+
+                .logo-img {
+                    display: block;
+                    width: 60px;
+                    height: 60px;
+                    border: 2px solid green;
+                    border-radius: 50%;
+                }
+
+                .vertical-line {
+                    width: 2px;
+                    height: 100%;
+                    background: skyblue;
+                    margin: 0 .5em;
+                }
+
+                .name {
+                    color: blue;
+                    font-weight: bold;
+                    align-self: center;
+                }
+            }
+            
+        }
+
+        .intro-statement {
+            padding: .5em;
+            border-radius: 5em;
+            background-image: linear-gradient(to bottom right, green, white);
+            box-shadow: 5px 5px 5px green;
+            text-align:center;
+            margin-bottom: 2em;
+        }
+
+        .active-hours {
+            p {
+                margin: 0;
+            }
+            strong {
+                color: blue;
+            }
+            b, strong {
+                text-transform: uppercase;
+            }
+            sup {
+                text-transform: lowercase;
+            }
+        }
+    }
+
+    .address {
+        background: #4d4d4d;
+        color: #f3f3f3;
+        box-shadow: 1px 2px gray;
+    }
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+
+    .button {
+        padding: 1em;
+        display: inline-block;
+        background: black;
+        color: white;
+        border-radius: 5em;
+        margin-bottom: 1em;
+    }
+
+    h2 {
+        text-align: center;
+        margin-bottom: 1em;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+    }
+
+    p{
+        line-height: 1.6em;
+    }
+
+    .author {
+        float: right;
+    }
+}
+
+.essay-section > div {
+    margin-bottom: 5em;
+}
+table {
+    margin: 2em 0;
+}
+th, td {
+    border: 1px solid skyblue;
+}
+th {
+    background: lightskyblue;
+}
+
+.next-topic {
+    text-align: center;
+    border: 2px solid red;
+    color: red;
+    margin: 2em 0;
+}
+
+.proverb {
+    display: flex;
+    height: 10em;
+    align-items: center;
+    justify-content: center;
+    background: black;
+    color: white;
+    margin-top: 2em;
+}
