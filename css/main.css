@@ -160,8 +160,8 @@ main .button {
 }
 
 main .hero-img {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   float: left;
   shape-outside: circle(50%);
@@ -183,6 +183,10 @@ main p {
 
 main .author {
   float: right;
+}
+
+.phrasal-verbs img {
+  width: 100%;
 }
 
 table {
@@ -218,6 +222,7 @@ th {
   background: black;
   color: white;
   margin-top: 2em;
+  padding: 2em;
 }
 
 /* Tablet Styles */
@@ -242,11 +247,21 @@ th {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
+  .essay-section .hero-img {
+    width: 200px;
+    height: 200px;
+  }
   .vocabularies, .questions {
     width: 50%;
   }
   .phrasal-verbs {
     width: 100%;
+  }
+  .phrasal-verbs img {
+    display: inline-block;
+    float: right;
+    width: 400px;
+    height: 200px;
   }
 }
 /*# sourceMappingURL=main.css.map */
