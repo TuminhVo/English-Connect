@@ -124,6 +124,7 @@ header {
 main {
     display: flex;
     flex-wrap: wrap;
+    font-size: 1.5em;
 
     .button {
         padding: 1em;
@@ -236,5 +237,24 @@ th {
             width: 400px;
             height: 200px;
         }
+    }
+}
+
+.pros-cons {
+    display: flex;
+    text-transform: uppercase;
+    width: 100%;
+
+    div {
+        padding: 1em;
+    }
+
+    div:first-child {
+        width: 45%;
+        background-color: lightskyblue;
+    }
+
+    &:not(:first-child) {
+        border: 2px dotted red;
     }
 }

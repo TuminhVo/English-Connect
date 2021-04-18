@@ -148,6 +148,7 @@ main {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  font-size: 1.5em;
 }
 
 main .button {
@@ -263,5 +264,26 @@ th {
     width: 400px;
     height: 200px;
   }
+}
+
+.pros-cons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.pros-cons div {
+  padding: 1em;
+}
+
+.pros-cons div:first-child {
+  width: 45%;
+  background-color: lightskyblue;
+}
+
+.pros-cons:not(:first-child) {
+  border: 2px dotted red;
 }
 /*# sourceMappingURL=main.css.map */
