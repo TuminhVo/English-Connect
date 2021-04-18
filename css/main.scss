@@ -228,10 +228,6 @@ th {
             height: 200px;
         }
     }
-    
-    .vocabularies, .questions {
-        width: 50%;
-    }
 
     .phrasal-verbs {
         width: 100%;
@@ -243,6 +239,12 @@ th {
         }
     }
 }
+
+@media only screen and (min-width: 1200px) {
+    .vocabularies, .questions {
+        width: 50%;
+    }
+} 
 
 .pros-cons {
     display: flex;
