@@ -191,7 +191,12 @@ main .author {
 }
 
 table {
+  width: 100%;
   margin: 2em 0;
+}
+
+table td {
+  padding: 0.5em;
 }
 
 th, td {
