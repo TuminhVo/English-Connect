@@ -5,156 +5,95 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>English Connect</title>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <div class="container">
-            <div class="logo">
-                <div class="main-logo">
-                    <a href="" class="logo-img"></a>
-                    <div class="vertical-line"></div>
-                    <a class="name" href="#">English<br>Connect</a>
+        <div class="row">
+            <div class="col">
+                <div class="logo"></div>
+                <div class="club">English Connect</div>
+                <div class="quote">Kolor your life with English!</div>
+            </div>
+            <h1 class="col intro">A Rendez-vouz for English learners in Nha Trang city</h1>
+            <div class="col float-right">
+                <button class="open-button" onclick="openForm()">Address</button>
+                <div class="form-popup" id="myForm">
+                    <div class="wrapper yellow-bg">
+                        <div class="img-bg"></div>
+                        <div class="white-bg">
+                            <h4 class="title">English Club</h4>
+                            <h4 class="greeting">Welcome</h4>
+                            <p class="place">Gu's Coffee (Tầng Trệt)</p>
+                            <p class="time">2:30 PM - 4:30 PM <br> every weekend</p>
+                        </div>
+                        <p class="address">52 Nguyễn Hữu Huân, Phước Tiến, Nha Trang</p>
+                        <p><a href="tel:+84911428877">091.142.8877</a></p>
+                        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                    </div>
                 </div>
-                <small>Kolor you life with English!</small>
             </div>
-
-            <h1 class="">A Rendez-vous for English learners in Nha Trang City</h1>
-            
-            <div class="active-hours">
-                <strong>every Sunday</strong>
-                <p>Fr. 14.30.PM To 16.30 PM</p>
-                <b>For all levels</b><br>
-                <strong>Apr. 11<sup>th</sup> 2021</strong>
-            </div>
-        </div>
-        <div class="address">
-            <p>At Gu's Coffee & More, 52 Nguyễn Hữu Huân, Phước Tiến, Nha Trang. Contact: thầy Hiếu: 0901.142.8877</p>
         </div>
     </header>
-    <main>
-        <div class="container">
-            <section class="essay-section">
-                <a class="button">Topic for discussion</a>
-
-                <h2 class="essay-title">VACCINE PASSPORT</h2>
-
-                <img class="hero-img" src="images/vaccine.jpg" alt="vaccine">
-
-                <p>
-                    More countries in the world are starting to <b>vaccinate</b> people against COVID-19, and some people would like to make vaccine <b>passports</b>.
-                </p>
-                <p>
-                    These passports would show that a person got the COVID-19 vaccine and that he could not spread the virus so easily.
-                </p>
-                <p>
-                    Many countries which depend on tourists are excited, and they would like to introduc vaccine passports. For businesses which <b>suffered</b> during the pandemic, a vaccine passport could be a big help.
-                </p>
-                <p>
-                    The problem is that tests showed that none of the COVID-19 vaccines was 100% effective. This means that some people who get the vaccine could still spread the virus. Another problem is that some countries started to vaccinate people months ago, but some countries are just starting. Also, older people got the vaccine earlier than younger people. Some people say that it is not fair that older people could travel because they would have the vaccine passport, but younger people could not.
-                </p>
-
-                <small>Source: <a href="">Vaccine Passport - level 2 | News in Levels</a></small>
-            </section>
     
-            <section class="vocabularies">
-                <h4>Vocabularies:</h4>
-                <ul>
-                    <li>
-                        <b>vaccinate</b> (to give someone a vaccine, usually by injection, to prevent them from getting  a disease): tiêm phòng,
-                    </li>
-                    <li>
-                        <b>passport</b> (a document which makes it possible to travel abroad): hộ chiếu;
-                    </li>
-                    <li>
-                        <b>suffer</b> (to experience something very bad or unpleasant): chịu đựng;
-                    </li>
-                    <li>
-                        <b>efective</b> (when something has the result which somebody wanted; when something works well): hiệu quả;
-                    </li>
-                </ul>
-            </section>
-            <section class="questions">
-                <h4>Questions for discussion</h4>
-                <ol>
-                    <li>
-                        What do you know about the Covid-19 pandemic? Can you summarize the current situation?
-                    </li>
-                    <li>
-                        What are the loss and damage from the Covid-19?
-                    </li>
-                    <li>
-                        What does vaccine passport use for?
-                    </li>
-                    <li>
-                        Are Covid-19 vaccines 100% effective? Why?
-                    </li>
-                    <li>
-                        What do you think about Vietnam's tourism without foreign tourists?
-                    </li>
-                    <li>
-                        Do local tourists can help recover the national tourism? What are your solutions suggested to save Vietnamese tourism?
-                    </li>
-                    <li>
-                        Do you agree to reopen Vietnamese border for tourism?
-                    </li>
-                </ol>
-                <a href="https://www.gavi.org/covid19-vaccines">read a blog</a>
-            </section>
-            
-            <section class="pros-cons">
-                <div>
-                    PROS & CONS
-                </div>
-                <div>
-                    reopen border for foreign tourists
-                </div>
-            </section>   
-    
-            <section class="phrasal-verbs">
+    <div class="line"></div>
 
-                <a class="button">Let's learn and apply</a>
-
-                <h2 class="apply-title">English idioms</h2>
-                
-                <table>
-                    <tr>
-                        <th>Idiom</th>
-                        <th>Meaning</th>
-                        <th>Usage</th>
-                    </tr>
-                    <tr>
-                        <td>A blessing in disguise</td>
-                        <td>a good thing that seemed bad at first</td>
-                        <td>as part of a sentence</td>
-                    </tr>
-                    <tr>
-                        <td>A dime a dozen</td>
-                        <td>Something common</td>
-                        <td>as part of a sentence</td>
-                    </tr>
-                    <tr>
-                        <td>Beat around the bush</td>
-                        <td>Avoid saying what you mean, usually because it is uncomfortable</td>
-                        <td>as part of a sentence</td>
-                    </tr>
-                    <tr>
-                        <td>Better late than never</td>
-                        <td>Better to arrive late than not to come at all</td>
-                        <td>by itself</td>
-                    </tr>
-                </table>
-            </section>
-        </div>        
-    </main>
+    <article>
+        <div class="title">
+            <span>Topic</span>
+            <h2>Why do we need to learn English?</h2>
+        </div>
+        <div class="essay">
+            <div class="essay-img">
+                <img src="images/graduate.jpg">
+            </div>
+            <p>One of the reasons why we need to be able to speak English nowadays is because the world is becoming smaller. Thanks to the internet and our developing global economy, more and more people are using English as a common way to communicate with each other. So now it has become unavoidable that companies and large businesses will need to employ people who can speak more than their own native language, that is where English comes in. It is now officially considered as an international language.</p>
+            <p>Of course, learning anything is difficult and English is no exception. However, there are ways to make the situation easier. I have come up with my own list of general rules of thumbs for learning English. Do you want to hear them? Do you want to know what they are? OK...let's go!</p>
+            <p>Learning English takes time and patience. It cannot be rushed. Try to relax and take it easy. The most important thing you need at the beginning is a good vocabulary. Without words, you have nothing to work with. You must start with a strong foundation or base and slowly build on it, day by day! You must view English as a part of your body... just as you would an arm or leg. It must become a part of your everyday life. Daily practice is very important. Do not worry about making mistakes... In fact, the more mistakes you make, the more you will learn from them. Just like learning to ride a bike. Sometimes you fall off. So, what do you do? You get back on track and try again. Do not look at English as just another subject. Your attitude to English and the way you view it will decide how well you progress. Just as we say in English "No pain... no gain". The two most important words to remember when learning English are... practice and confidence. Practice English every day and be confident. You will find that the more you use English... the better your English will become and the more confident you become... Then the more you will want to use it. Make it a rule to tell yourself... I can do it... I can do it... I can do it!</p>
+            <small>Source: Learn English with Mr. Duncan</small>
+        </div>
+        <div class="gap"></div>
+        <div class="vocab">
+            <h2>Vocabulary:</h2>
+            <ul>
+                <li><b>come up with:</b>to suggest or think of an idea or plan (đề xuất)</li>
+                <li><b>foundation or base</b> (nền tảng)</li>
+                <li><b>attitude</b> (thái độ)</li>
+                <li><b>No pain... no gain</b> (Có công mài sắt có ngày nên kim)</li>
+                <li><b>progress</b> (tiến bộ)</li>
+            </ul>
+        </div>
+        <div class="question">
+            <h2>Questions for discussion:</h2>
+            <ol>
+                <li>Is English important? What makes English important? Tell us the reason.</li>
+                <li>Do you have your own objective to master English? Share with us your plan!</li>
+                <li>Can you share any circumstances in which you use English for communication?</li>
+                <li>Is learning English easy? How many hours per day do you spend for learning English?</li>
+                <li>What are difficulties you encounter when learning English?</li>
+                <li>Which skill among listening, speaking and writing skills is hard for you to learn?</li>
+                <li>How can we have an English working environment for learners to practice?</li>
+                <li>Have you ever traveled abroad and use English for communication? Can you share with us?</li>
+            </ol>
+        </div>
+    </article>
+    <article>
+        <div>Public speaking</div>
+        <div>Is English language vital for anyone to succeed in career?</div>
+        <div class="idiom">
+            <h2>Let's learn and apply</h2>
+            <h2>Hit the books</h2>
+            <p>Literally, hit the books means to physically hit, punch or slap your reading books. However, this is a common English idiom among students, especially American college students who have a lot of studying to do. It simply means "to study", and is a way of telling your friends that you're going to study.</p>
+            <p>It could be for a final exam, a midterm test or even an English exam.</p>
+            <p><b>Examples: </b><q>SORRY but I can't watch the game with you tonight, I have to <b>hit the books</b>. I have a huge exam next week!</q></p>
+        </div>
+    </article>
+    <div class="next-topic">
+        NEXT TOPIC ON SUNDAY 09<sup>th</sup> May 2021: <span>Reading books</span>
+    </div>
     <footer>
-        <div class="next-topic">
-            <p><strong>NEXT TOPIC ON WEDNESDAY 24 April 2021:</strong> The first Olympic Games</p>
-        </div>
-        <div class="proverb">
-            <q><strong>Absence makes the heart grow fonder</strong> - Càng xa càng yêu</q>
-        </div>
+        A stranger nearby is better than a far-away relative - <span>Bán bà con xa, mua láng giềng gần</span>
     </footer>
-    <script src="js/index.js"></script>
+    <script src="style.js"></script>
 </body>
 </html>
