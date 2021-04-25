@@ -30,12 +30,28 @@ header .intro {
 }
 
 .form-popup {
+    height: 100%;
     display: none;
     position: fixed;
     top: 0;
     right: 0;
     background-color: yellow;
     padding: 30px;
+    overflow-y: scroll;
+}
+
+.essay-img {
+    width: 100%;   
+}
+
+.essay-img img {
+    width: 100%;       
+}
+
+@media only screen and (min-width: 600px) {
+    .essay-img {
+        width: 580px;   
+    }
 }
 
 .line {
